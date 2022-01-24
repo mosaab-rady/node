@@ -2,8 +2,9 @@ const express = require('express');
 
 const app = express();
 
+app.use('/second', require('./app'));
 app.get('/', (req, res) => {
-  res.send('hello world my name is mosaab');
+  res.send('Hi, I`m mosaab radi');
   res.end();
 });
 
