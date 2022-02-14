@@ -4,6 +4,7 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
   console.log(`hello from the second route!!!`);
+  res.send(`hello from the second route!!!`);
   next();
 });
 
